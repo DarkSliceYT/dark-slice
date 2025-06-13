@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Slice - Roblox Tools</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tool-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 216, 255, 0.2);
+    }
+
+    .btn {
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #00c1e8;
+      transform: scale(1.05);
+    }
+
+    .hero h1, .hero p {
+      animation: slideUp 1s ease-in-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tool-card img {
+      width: 128px;
+      height: 128px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Dark Slice</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Exploits</a>
+      <a href="#">APIs</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to DarkSlice's Exploits</h1>
+    <p>Free tools and exploits for Roblox developers.</p>
+    <a href="tools.html" class="btn">Explore Now</a>
+  </section>
+
+  <section class="tools">
+    <h2>Featured Tools</h2>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <img src="images/jjsploit.png" alt="JJSploit logo" />
+        <h3>JJSploit</h3>
+        <p>Easy-to-use Lua executor for Roblox.</p>
+        <a href="https://www.mediafire.com/file/i2bybagv97d4ksy/jjsploit.zip/file" download class="btn small">Download</a>
+      </div>
+
+      <div class="tool-card">
+        <img src="images/krnl.png" alt="Krnl logo" />
+        <h3>Krnl</h3>
+        <p>Powerful and stable exploit with DLL injection.</p>
+        <a href="https://www.mediafire.com/file/7mcdracdiuw7oet/krnl.zip/file" download class="btn small">Download</a>
+      </div>
+
+      <div class="tool-card">
+        <img src="images/fluxus.png" alt="Fluxus logo" />
+        <h3>Fluxus (Android)</h3>
+        <p>Mobile-supported exploit with frequent updates.</p>
+        <a href="https://www.mediafire.com/file/knara9yl4voj5ed/Fluxus.zip/file" download class="btn small">Download</a>
+      </div>
+
+      <div class="tool-card">
+        <img src="images/trigon.png" alt="Trigon logo" />
+        <h3>Trigon Executor</h3>
+        <p>Clean, fast, and script-packed executor for advanced users.</p>
+        <a href="https://www.mediafire.com/file/8u4x40f38hm1ict/Trigon.zip/file" download class="btn small">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dark Slice. All rights reserved.</p>
+  </footer>
+</body>
+</html>
